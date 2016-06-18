@@ -1,0 +1,12 @@
+/***Android Tutorial Links**/
+  
+ http://www.northborder-software.com/tutorials.html
+
+
+/**End**/
+
+
+https://github.com/tutsplus/Android-GoogleMaps-Part1 /**For Google Map**/
+https://github.com/QuickBlox/quickblox-android-sdk/tree/master/sample-chat
+http://quickblox.com/developers/Android_XMPP_Chat_Sample
+http://www.ahotbrew.com/android-floating-action-button/  /*for floating actionbar

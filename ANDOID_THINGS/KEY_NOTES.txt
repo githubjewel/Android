@@ -1,0 +1,11 @@
+->To finish an activity call: 
+                 activity_name.this.finish();
+
+->Set image scaleType=centerCrop to remove space between horizontal image viewes.
+
+->In manifest file inside the activity tag set following to fix the screenOrientation:   
+            android:screenOrientation=" "
+
+->Manifest inside activity tag set following to take action when screenOrientation change
+  and override the method: onConfigurationChanged() in the java file for activity.           
+            android:configChanges="orientation|screenSize"

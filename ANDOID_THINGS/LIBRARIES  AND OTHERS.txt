@@ -1,0 +1,28 @@
+/**Google Play Service: 
+
+      ->Install play service from SDK Manager
+      ->compile 'com.google.android.gms:play-services:9.0.0'
+      ->compile 'com.google.android.gms:play-services:8.1.0' 
+    
+/**Picasso:
+
+       ->compile 'com.squareup.picasso:picasso:2.5.2'
+
+
+
+/**Evaluate Mathematical Expression:
+    
+      ->compile 'net.objecthunter:exp4j:0.4.4'
+
+
+/**Generate API_KEY for Google Map:
+
+   ->Open cmd and go to the directory where jdk is located that is
+        C:\Program Files\Java\jdk1.7.0_25\bin>
+   
+   ->Now run the following command for SHA1 fingerprint:
+       keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android           			androiddebugkey -storepass android -keypass android
+
+   ->Then Copy the SHA1 and follow the google console instructions
+
+   ->Example API_KEY: AIzaSyDayQorxwZ53IIWM4NDB_A-RUiwLN1AP8k

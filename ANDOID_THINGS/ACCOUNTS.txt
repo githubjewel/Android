@@ -1,0 +1,12 @@
+/**OpenWeatherMap : rokibulducse@gmail.com, openweather
+           ApiKey : 543d27146a8874703fb0e85945f85486
+
+
+
+/**Firebase: Login with google account:rokibulducse@gmail.com
+
+
+/**Cloudinary: user: jewel_cloudinary, pass: jewel_cloudinary
+
+
+/**Genymotion: user: jewel_genymotion, pass: jewel_genymotion, Email: jewelducse@gmail.com

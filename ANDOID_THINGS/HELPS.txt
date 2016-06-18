@@ -1,0 +1,77 @@
+/**Set Environment for Android:
+   ->First Install Jdk7
+   ->Go:Computer->properties->Advanced system Settings->Environment Variables
+        Under System Variables create new and set
+        Name:JAVA_HOME, Value: C:\Program Files\Java\jdk1.7.0  
+         
+**/
+
+
+
+/**Configure Blueestacks with Eclipse:
+   ->Open cmd 
+   ->Go to adt-bundle-windows-x86-20140702\sdk\platform-tools>
+   ->Then type: adb connect localhost
+   ->Run project from and eclipse and choose the device from avd
+
+**/
+
+
+/**Configure Bluestacks with Android Studio(Always open with admin):
+    ->Go to \Android\Sdk\platform-tools
+    ->Open adb as administrator
+    ->Open Android Device Monitor from A.Studio
+    ->Click Window,then show and select Device and click ok.
+
+
+/** Unable to start daemon process:not reserve enough space object heap:
+    For Android Studio:
+    ->Open gradle(PROPERTIES FILE) file inside the first directory
+    ->Add the following line at the end of the file(under # org.gradle.parallel=true)    
+       org.gradle.jvmargs=-XX\:MaxHeapSize\=512m -Xmx512m 
+       (**Without # sign)
+       
+
+/**Eclipse and Android Studio Error: Failed to create virtual machine
+   For eclipse:
+   ->Go to eclipse main folder
+   ->Change the file under eclipse_icon with the given below   
+   ->Xms40m
+   ->Xmx512m
+   For And.Studio:
+   ->Open cmd as admin
+   ->Open C:\Program Files\Android\Android Studio\bin\studio.exe.vmoptions
+   ->change Xms40m and XmX512m 
+
+
+/**Add a jar file in Android Studio:
+  ->Select Project from drop down menu
+  ->Create a directory named 'libs' under 'app' directory if not exists 
+  ->Copy the jar file in the libs directory
+  ->Open the build.gradle file under 'src' or 'gradle' directory
+  ->Add the following line in the dependencies section:
+     compile files('libs/file_Name.jar')
+
+
+/**Add jar file in Eclipse:
+   ->Right click on project then go to properties
+   ->Select 'Java Build Path' and the Libraries
+   ->Click Add External JARS and select the jar file
+
+
+/*Change font size in Eclipse:
+  ->Window-preferences-General-Appearance-colors and fonts-Basic.
+
+
+/*Change font size in Android Studio:
+  ->File--Settings--Editor--Color & Font--Font(Schema,Save as default copy)
+  ->ScrollEnable(File--Settings--Editor--General,then Crtl+Mouse Wheel)
+
+
+/*Change Window size in Android Studio:
+  ->File--settings--Appearancea & Behavior--Appearance
+    Override defaults font by
+
+/**If Android Device Chooser Window not shown then go to the required
+   directory using cmd and type: adb kill-server then 
+                                 adb connected localhost
