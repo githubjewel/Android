@@ -1,8 +1,10 @@
 /**Set Environment for Android:
-   ->First Install Jdk7
+   ->First Install
    ->Go:Computer->properties->Advanced system Settings->Environment Variables
         Under System Variables create new and set
         Name:JAVA_HOME, Value: C:\Program Files\Java\jdk1.7.0  
+
+   ->Then isntall android studio.
          
 **/
 

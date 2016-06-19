@@ -1,11 +1,61 @@
 ->To finish an activity call: 
                  activity_name.this.finish();
 
+
+->When finish method is called the successive method calls are:
+       *onPause(), *onStop(), *onDestroy().
+
+
 ->Set image scaleType=centerCrop to remove space between horizontal image viewes.
+
 
 ->In manifest file inside the activity tag set following to fix the screenOrientation:   
             android:screenOrientation=" "
 
+
 ->Manifest inside activity tag set following to take action when screenOrientation change
   and override the method: onConfigurationChanged() in the java file for activity.           
             android:configChanges="orientation|screenSize"
+
+
+->After clicking the app icon method calls are:
+      *onCreate(), *onStart(), *onResume().
+
+
+->When we minimize current activity or go from first to second activity the methods of 
+  current or first activity called: 
+                                  *onPause(), *onStop().
+  That means when current activity is minimized or we are in second activity the first or
+  current activity is sopped but not destroyed. 
+                       
+
+->If we come back to first activity by pressing back from the second activity or a minimized 
+  activity is relaunched then following methods of first or relaunced activity is called:
+      *onRestart(), *onStart(), *onResume().
+  
+
+->When back batton is pressed from an activity then it is destroyed that is following methods
+  are called: *onPause->onStop->onDestroy. 
+  That means pressing back button calls finish() which calls those methods.In this case we
+  can not save state or information.
+
+
+->When an special activity(theme.dialog) that appears like an AlertDialog is launched
+  then called method is: *onPause()
+  After disappearing the alertDialog: *onResume(), is called.
+
+
+->If screen orientation is changed then method calls are:
+     *Pause->Stop->Destroy->Create->Start->Resume
+
+
+->Once system automatically recreates activity after destroying it(Ex.Orientation changed)
+  after onStart(),onRestoreInstanceState() is called.
+  onRestoreInstance() and onCreate() receives the same Bundle that means we can use 
+  onCreate() instead of this method.
+  After onPause(), onSavedInstance() is called.
+
+ 
+  
+
+
